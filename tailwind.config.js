@@ -16,6 +16,11 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      backgroundImage: (theme) => ({
+        "icon-user": "url(../assets/icons/user.svg)",
+        "icon-globe": "url(../assets/icons/globe.svg)",
+        "icon-search": "url(../assets/icons/search.svg)",
+      }),
       colors: {
         "black-night": "#2A2A2A",
         "grey-soft": "#CCCCCC",
