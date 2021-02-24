@@ -2,6 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
+.nav-list li {
+  @apply mr-8;
+}
+
+.nav-list li:last-child {
+  @apply mr-0;
+}
+
+.nav-list a {
+  @apply hover:text-white;
+}
+
 .main-bg {
   height: calc(100vh - 56px);
+}
+
+.article-title {
+  @apply text-6xl text-malibu;
+}
+
+.article-text {
+  @apply text-2xl mt-4;
+}
+
+.footer-list {
+  @apply mt-6 md:mt-0 md:mr-16;
+}
+
+.footer-list a {
+  @apply hover:text-white;
 }

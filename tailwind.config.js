@@ -16,7 +16,7 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
-      width: {
+      maxWidth: {
         "700px": "700px",
       },
       backgroundImage: (theme) => ({
