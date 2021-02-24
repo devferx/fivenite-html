@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+.animate {
+  opacity: 0;
+  transition: 400ms 300ms linear opacity;
+}
+
+.active {
+  opacity: 1;
+}
+
 .nav-list li {
   @apply mr-8;
 }
