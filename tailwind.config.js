@@ -20,7 +20,7 @@ module.exports = {
         "700px": "700px",
       },
       backgroundImage: (theme) => ({
-        main: "url(../assets/images/main-bg.png)",
+        main: "url(../assets/images/main-bg.jpg)",
         banner: "url(../assets/images/bg-banner.png)",
         // Icons
         "icon-user": "url(../assets/icons/user.svg)",
