@@ -21,6 +21,7 @@ module.exports = {
       },
       backgroundImage: (theme) => ({
         main: "url(../assets/images/main-bg.png)",
+        banner: "url(../assets/images/bg-banner.png)",
         // Icons
         "icon-user": "url(../assets/icons/user.svg)",
         "icon-globe": "url(../assets/icons/globe.svg)",
