@@ -29,7 +29,7 @@ module.exports = {
         loader: "file-loader",
         options: {
           outputPath: "assets/img",
-          name: "[name].[ext]",
+          name: "[hash].[ext]",
         },
       },
       {
@@ -42,11 +42,7 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: [
-          isProd ? MiniCssExtractPlugin.loader : "style-loader",
-          "css-loader",
-          "postcss-loader",
-        ],
+        use: [MiniCssExtractPlugin.loader, "css-loader", "postcss-loader"],
       },
     ],
   },
@@ -54,6 +50,6 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, "src/index.html"),
     }),
-    isProd ? new MiniCssExtractPlugin() : () => {},
+    new MiniCssExtractPlugin(),
   ],
 };
